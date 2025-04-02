@@ -1,0 +1,73 @@
+body {
+	background: url("./images/background.png") rgba(0, 0, 0, .7);
+	background-blend-mode: multiply;
+	background-size: 100px;
+	font-family: "Comic Sans MS", sans, serif;
+	overflow-x: hidden;
+	margin: 0px;
+	padding: 0px;
+}
+
+.main-banner {
+	background: url("./images/banner.png") rgba(150, 150, 150, .5);
+	background-blend-mode: multiply;
+	width: 100%;
+	height: 80px;
+	animation: banner-background 40s infinite linear;
+	box-shadow: black 0px 6px;
+	overflow: hidden;
+}
+
+@keyframes banner-background {
+	0% {
+		background-position: 0px;
+	}
+	100% {
+		background-position: 986px;
+	}
+}
+
+.banner-title {
+	left: 32px; 
+	position: absolute; 	
+	color: white;
+	filter: drop-shadow(-1px -1px black) 
+	drop-shadow(2px 2px black)
+	drop-shadow(-1px 1px black)
+	drop-shadow(2px -1px black);
+}
+
+.contents {
+	top: 80px;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+}
+
+.about {
+	width: calc(352px * 1.5);
+	height: calc(258px * 1.5);
+	background: url('./images/about.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	max-width: calc(352px * 1.5);
+}
+
+.socials {
+	background: url('./images/socials.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	width: calc(500px * 1.3);
+	height: calc(289px * 1.3);
+	right: 20px;
+}
+
+.socials-p {
+	width: calc(500px * 1.3 - 40px);
+	height: calc(289px * 1.3 - 70px);
+	margin: 0px;
+	padding: 70px 20px 0px 20px;
+	font-size: 48px;
+}
