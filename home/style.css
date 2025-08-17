@@ -1,0 +1,112 @@
+body{
+	font-family: "Comic Sans MS";
+	background-image: url('./assets/images/background.jpg');
+	background-blend-mode: multiply;
+	background-color: rgba(0, 0, 0, .7);
+	animation: scrolling-background 15s infinite linear;
+	background-size: 150px;
+}
+
+p{
+	text-indent: 3em;
+}
+
+@keyframes scrolling-background{
+	100% {
+		background-position: 150px 150px;
+	}
+}
+
+.headerBase{
+	padding: 10px;
+	text-align: center;
+}
+
+.navbar{
+	font-size: 16px;
+	position: relative;
+	white-space: nowrap;
+	top: 15px;
+}
+
+.navbar a{
+	text-decoration: none;
+	font-weight: 700;
+	color: #000000;
+	margin: 5px;
+	padding: 15px;
+	background-image: url("./assets/images/button.png");
+	background-size: 100% 100%;
+	transition: .5s ease;
+}
+
+.navbar a:hover{
+	padding: 20px;
+}
+
+.content{
+	position: relative;
+	top: 25px;
+	gap: 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom; 25px;
+}
+
+.content div{
+	position: relative;
+	padding: 25px;
+	background-size: 100% 100%;
+}
+
+.socials a, .socialsB a{
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 36px;
+	transition: .5s ease;
+	color: #000000;
+}
+
+.socialsB a{
+	color: #ffffff;
+}
+
+.socials a:hover, .socialsB a:hover{
+	font-size: 40px;
+}
+
+.msgForm{
+	text-align: center;
+}
+
+.msgForm textarea{
+	background-image: url("./assets/images/textarea.png");
+	background-size: 100% 100%;
+	padding: 25px;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: "Comic Sans MS";
+}
+
+.msgForm button{
+	background-image: url("./assets/images/button.png");
+	background-size: 100% 100%;
+	background-color: rgba(0, 0, 0, 0);
+	border: none;
+	outline: none;
+	font-family: "Comic Sans MS";
+	transition: .5s ease;
+}
+
+.msgForm button:hover{
+	padding: 50px;
+}
+
+.messageBoard li{
+	list-style-image: url("./assets/images/messageBullet.png");
+	margin-top: 10px;
+}

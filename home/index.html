@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<!--hello there sneaker, snooper or code peeker even
+		i dont have anything against you viewing my site code, infact i'd appreciate if
+		youd send tips my way on how to improve it!
+		
+		obviously do not commit thievery but do also feel free to use my site as inspo.
+	-->
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>NotAModerator's Webpage</title>
+		<link rel="stylesheet" href="./style.css">
+		<link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+		<script src="./assets/scripts/form.js"></script>
+	</head>
+	<body>
+		<!--nav-->
+		<header class="headerBase">
+			<img src="./assets/images/nav-title.png" width="300">
+			<div class="navbar">
+				<a href="./legacy">View Legacy Page</a>
+				<a href="./april-fools">Click to get trolled!!1!1!1</a>
+			</div>
+		</header>
+		<!--content-->
+		<div class="content">
+			<div style="left: -120px; width: 550px; background-image: url('./assets/images/aboutBg.png'); padding-left: 100px;">
+				<h1>About Me!</h1>
+				<p>
+					Hello, I'm NotAModerator! (Also known as NAM, Viet, etc.)
+					I partake in a couple hobbies, such as Drawing, Mechanical Engineering and 3D Modeling,
+					along with Programming. This website is here to showcase any works of mine that may be of interest,
+					so do consider looking around!
+				</p>
+				<h1>Socials</h1>
+				<p> 
+					I have socials on Newgrounds and Youtube, both under the same alias. I don't post content too often,
+					but I will post things related to character designs, ingame events, or just drawing.
+				</p>
+				<ul class="socials" style="list-style-type: none; padding: 0;">
+					<li>
+						<img src="./assets/images/youtube.png" width="48"> <a href="https://youtube.com/@notamoderatr">Youtube</a>
+					</li>
+					<li>
+						<img src="./assets/images/newgrounds.png" width="48"> <a href="https://notamoderator.newgrounds.com">Newgrounds</a>
+					</li>
+				</ul>
+			</div>
+			<div style="right: -120px; width: 550px; background-image: url('./assets/images/programBg.png'); color: #ffffff;">
+				<h1>Programming</h1>
+				<p>
+					Ever since I started messing with school computers in elementary school, (and I don't mean a Chromebook) I've
+					always been fascinated with programming things and seeing them work. Website design was something I got into
+					later down the line but making applications or scripts of applications was always fun to do. Now, I do programming in
+					Python, Javascript, Lua, HTML5 and its related languages, along with some GCODE for manufacturing and drafting in
+					AutoCAD.
+				</p>
+				<ul class="socialsB" style="list-style-type: none; padding: 0;">
+					<li>
+						<img src="./assets/images/github.png" width="48"> <a style="color: #ffffff;" href="https://github.com/NotAModerator">My Github Projects</a>
+					</li>
+				</ul>
+			</div>
+			<div style="left: -120px; width: 600px; height: 400px; background-image: url('./assets/images/bulletinBg.png');" >
+				<div style="top: 50px; padding: 0;" class="msgForm">
+					<h1 style="text-align: left;">Want to Leave a Message?</h1>
+					<textarea id="textbox" rows="7" maxlength="1000" style="resize: none; width: 100%;" placeholder="Enter Message..."></textarea>
+					<button style="font-size: 25px; padding: 10px; position: relative" onclick="sendMessage()">Send!</button>
+				</div>
+			</div>
+			<div style="right: -120px; width: 543px; height: 328px; padding-left: 40px; background-image: url('./assets/images/messages.png'); color: #ffffff;">
+				<h1>Message Board</h1>
+				<div style="height: 100px; overflow-y: auto;">
+					<ul id="messageBoard" class="messageBoard" style="font-size: 18px;"></ul>
+				</div>
+			</div>
+		</div>
+		<img src="./assets/images/construction.png" width="128" style="position: fixed; left: 20px; bottom: 20px;">
+	</body>
+</html>
