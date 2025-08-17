@@ -23,7 +23,7 @@ function sendMessage() {
 function addEntry(v) {
 	console.log(v)
 	var newBullet = document.createElement("li");
-	newBullet.innerHTML = v.message;
+	newBullet.innerText = v.message;
 	document.getElementById("messageBoard").appendChild(newBullet);
 }
 
@@ -31,4 +31,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	fetch(uri + "?sort_by=id")
 	.then((response) => response.json())
 	.then((data) => data.forEach(addEntry));
+
 })
